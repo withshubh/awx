@@ -82,8 +82,8 @@ def get_ig_ig_mapping(ig_instance_mapping, instance_ig_mapping):
         ig_ig_set = set()
         for instance_hostname in ig_instance_mapping[group_name]:
             ig_ig_set |= instance_ig_mapping[instance_hostname]
-        else:
-            ig_ig_set.add(group_name)  # Group contains no instances, return self
+            
+        ig_ig_set.add(group_name)  # Group contains no instances, return self
         ig_ig_mapping[group_name] = ig_ig_set
     return ig_ig_mapping
 
