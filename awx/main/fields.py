@@ -833,7 +833,6 @@ class CredentialTypeInjectorField(JSONSchemaField):
     def schema(self, model_instance):
         return {
             'type': 'object',
-            'additionalProperties': False,
             'properties': {
                 'file': {
                     'type': 'object',
