@@ -21,7 +21,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 def is_testing(argv=None):
-    import sys
     '''Return True if running django or py.test unit tests.'''
     if 'PYTEST_CURRENT_TEST' in os.environ.keys():
         return True
